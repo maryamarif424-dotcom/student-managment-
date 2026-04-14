@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📄 Student Details</h1>
+
+<div class="box">
+    <p id="name"></p>
+    <p id="dept"></p>
+    <p id="gpa"></p>
+    <p id="email"></p>
+</div>
+
+<button onclick="goBack()">⬅ Back</button>
+
+
+<script>
+let name = localStorage.getItem("name");
+
+document.getElementById("name").innerText = "👤 Name: " + name;
+document.getElementById("dept").innerText = "🏫 Department: " + localStorage.getItem("dept");
+document.getElementById("gpa").innerText = "📊 GPA: " + localStorage.getItem("gpa");
+document.getElementById("email").innerText = "📧 Email: " + localStorage.getItem("email");
+</script>
+
+</body>
+</html>
